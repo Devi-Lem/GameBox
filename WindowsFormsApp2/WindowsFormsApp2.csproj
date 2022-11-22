@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B616C01A-B2AB-457A-B67D-1EA5F9A00B6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseLighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6045e6aa7bdd0a3874cf02e1f510e615.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ageOfEmpires4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreed3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreed3Liberation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreed4BlackFlag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedAltairsChronicles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedBrotherhood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedOdyssey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedOrigins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedRevelations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedRouge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedSyndicate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedUnity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assasinsCreedValhalla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battlefield4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bleedingEdge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counterStrike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counterStrikeGlobalOffensive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counterStrikeSource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crysis2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crysis3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diablo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diablo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diablo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dota2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry3BloodDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCry6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCryInstincts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCryNewDawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farCryPrimal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fifa21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forHonor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forzaHorizon4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forzaHorizon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garrysMod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gearsTactics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grounded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gta3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gta4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gta5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtaLibertyCityStories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtaOnline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtaSanAndreas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halfLife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halfLife2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haloInfinite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hearthstone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heroesOfTheStorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jak3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jakX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lead4Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lead4Dead2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfsMostWanted05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nfsPayback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ori.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdr2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rdrOnline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redDeadRevolverpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seaOfThieves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starcraft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starWarsBattlefront2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teamFortress2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theLastOfUs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theLastOfUs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theSims4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomClancysRainbowSixSiege.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomClancysTheDivision.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncharted2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncharted3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncharted4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unchartedTheLostLegacy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warcraft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steam_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
