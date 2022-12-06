@@ -9,3 +9,6 @@ App features:
 * User profile with a list of liked games
 * Dynamic top of games
 * Dynamic interface
+
+## Screenshots
+![Alt text](/../screenshots/screenshots/Login.jpg?raw=true "Login screen")
