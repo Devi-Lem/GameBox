@@ -12,3 +12,6 @@ App features:
 
 ## Screenshots
 ![Alt text](/../screenshots/screenshots/Login.jpg?raw=true "Login screen")
+![Alt text](/../screenshots/screenshots/Main.jpg?raw=true "Main page")
+![Alt text](/../screenshots/screenshots/Profile.jpg?raw=true "User profile page")
+![Alt text](/../screenshots/screenshots/Gameinfo.jpg?raw=true "Game info page")
