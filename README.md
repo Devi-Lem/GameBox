@@ -11,7 +11,7 @@ App features:
 * Dynamic interface
 
 ## Screenshots
-![Alt text](/../screenshots/screenshots/Login.jpg?raw=true "Login screen")
-![Alt text](/../screenshots/screenshots/Main.jpg?raw=true "Main page")
-![Alt text](/../screenshots/screenshots/Profile.jpg?raw=true "User profile page")
-![Alt text](/../screenshots/screenshots/Gameinfo.jpg?raw=true "Game info page")
+![Alt text](/../screenshots/screenshots/Login.png?raw=true "Login screen")
+![Alt text](/../screenshots/screenshots/Main.png?raw=true "Main page")
+![Alt text](/../screenshots/screenshots/Profile.png?raw=true "User profile page")
+![Alt text](/../screenshots/screenshots/Gameinfo.png?raw=true "Game info page")
